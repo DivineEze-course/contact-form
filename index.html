@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="main">
+    <form>
+      <h1>Contact Us</h1>
+      <div id="info">
+        <div id="fname">
+          <label id="fname-header">First Name <span>*</span></label>
+          <input id="fname-input" placeholder="John" type="text" size="50" required>
+        </div>
+        <div id="lname">
+          <label id="lname-header">Last Name <span>*</span></label>
+          <input id="lname-input" placeholder="Fischer" type="text" size="50" required>
+        </div>
+      </div>
+      <div id="email">
+        <label id="email-header">Email Address <span>*</span></label>
+        <input id="email-input" placeholder="email@example.com" type="email" required>
+      </div>
+      <div id="query">
+        <label id="query-header">Query Type <span>*</span></label>
+        <div id="query-input">
+          <div id="query-input-1"><input type="radio" for="query-type" name="query" id="query-type"> <span
+              id="query-span">General Enquiry</span></input> </div>
+          <div id="query-input-2"><input type="radio" for="query-type" name="query" id="query-type"> <span
+              id="query-span">Support Request</span></input> </div>
+        </div>
+      </div>
+      <div id="message">
+        <label id="message-header">Message <span>*</span></label>
+        <textarea id="message-text" type="text" rows=8 required></textarea>
+      </div>
+      <div id="checkbox"><input id="checkbox-input" type="checkbox" required>
+        <label>I consent to being contacted by the team </label><span>*</span>
+      </div>
+      <!-- <div id = "submit">
+<h2><input id = "submit-button" type="submit"></h2>
+</div> -->
+      <button id = "submit-button" onclick="mysubmit()">Submit</button>
+      <!-- Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+    </form>
+  </div>
+</body>
+<script src="/scripst.js"></script>
+
+</html>
